@@ -34,6 +34,15 @@ pyhton
   * [☞]() re.sub 匹配所有内容并替换
   * [☞]() re.compile 匹配符封装
 
+### beautifulsoup4 库 网页解析正式表达
+* p.title 获取 title 里面内容
+* p.string 获取 p标签 里面的内容
+* title.parent.name 获取 title 的父级标签
+* a 获取超链接
+* find_all('a')获取所有超链接
+* find(id = "link2") 获取id = link2 的超链接
+* get_text() 获取网页内的所显示有内容
+* 
 
 ***
 ## Urllib 库
@@ -284,6 +293,73 @@ res = re.match(pattern,content)
 #和 res = re.match('^Xi.*?(d+)s.*s$',content,re.S) 是一样的
 print(res.group(1))
 ```
+***
+## beautifulsoup4 库 网页解析正式表达 https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+```python
+from bs4 import BeautifulSoup
+
+html_doc = """
+
+<html><head><title>学习python的正确姿势</title></head>
+<body>
+<p class="title"><b>小帅b的故事</b></p>
+
+<p class="story">有一天，小帅b想给大家讲两个笑话
+<a href="http://example.com/1" class="sister" id="link1">一个笑话长</a>,
+<a href="http://example.com/2" class="sister" id="link2">一个笑话短</a> ,
+他问大家，想听长的还是短的？</p>
+
+<p class="story">...</p>
+"""
+
+#将网页内容给soup
+soup = BeautifulSoup(html_doc,'lxml')
+```
+* p.title 获取 title 里面内容
+```python
+print(soup.title.string)
+#学习python的正确姿势
+```
+* p.string 获取 p标签 里面的内容
+```python
+print(soup.p.string)
+#小帅b的故事
+```
+* title.parent.name 获取 title 的父级标签
+```python
+print(soup.title.parent.name)
+#head
+```
+* a 获取超链接
+```python
+print(soup.a)
+#<a class="sister" href="http://example.com/1" id="link1">一个笑话长</a>
+```
+* find_all('a')获取所有超链接
+```python
+print(soup.find_all('a'))
+#[<a class="sister" href="http://example.com/1" id="link1">一个笑话长</a>, <a class="sister" href="http://example.com/2" id="link2">一个笑话短</a>]
+```
+* find(id = "link2") 获取id = link2 的超链接
+```python
+print(soup.find(id="link2"))
+#<a class="sister" href="http://example.com/2" id="link2">一个笑话短</a>
+```
+* get_text() 获取网页内的所显示有内容
+```python
+print(soup.get_text())
+
+# 学习python的正确姿势
+
+小帅b的故事
+有一天，小帅b想给大家讲两个笑话
+一个笑话长,
+一个笑话短 ,
+他问大家，想听长的还是短的？
+...
+```
+
+
 
 大标题
 ===
