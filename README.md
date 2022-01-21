@@ -4,9 +4,14 @@ pyhton
 基础请求
 ---
 ***
-* request 模块 
-    * [urlopen方法 | 最直接的get请求方式]()
-    * [Request方法 | 可以加入自定义headers数据]()
+* Urllib 库 (python内置)
+   * error 模块 (在使用`request`模块遇到错了，用它来进行异常处理)
+   * parse 模块 (用来解析我们的 URL 地址，比如解析域名地址啦，URL指定的目录等)
+   * robotparser 模块 (用来解析网站的 robot.txt)
+   * request 模块 (用来发起请求)
+      * [urlopen方法 | 最直接的get请求方式]()
+      * [Request方法 | 可以加入自定义headers数据]()
+    
 --
 ***
 request | urlopen方法 最直接的get请求方式
