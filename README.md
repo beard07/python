@@ -315,37 +315,37 @@ html_doc = """
 #将网页内容给soup
 soup = BeautifulSoup(html_doc,'lxml')
 ```
-* p.title 获取 title 里面内容
+#### p.title 获取 title 里面内容
 ```python
 print(soup.title.string)
 #学习python的正确姿势
 ```
-* p.string 获取 p标签 里面的内容
+#### p.string 获取 p标签 里面的内容
 ```python
 print(soup.p.string)
 #小帅b的故事
 ```
-* title.parent.name 获取 title 的父级标签
+#### title.parent.name 获取 title 的父级标签
 ```python
 print(soup.title.parent.name)
 #head
 ```
-* a 获取超链接
+#### a 获取超链接
 ```python
 print(soup.a)
 #<a class="sister" href="http://example.com/1" id="link1">一个笑话长</a>
 ```
-* find_all('a')获取所有超链接
+#### find_all('a')获取所有超链接
 ```python
 print(soup.find_all('a'))
 #[<a class="sister" href="http://example.com/1" id="link1">一个笑话长</a>, <a class="sister" href="http://example.com/2" id="link2">一个笑话短</a>]
 ```
-* find(id = "link2") 获取id = link2 的超链接
+#### find(id = "link2") 获取id = link2 的超链接
 ```python
 print(soup.find(id="link2"))
 #<a class="sister" href="http://example.com/2" id="link2">一个笑话短</a>
 ```
-* get_text() 获取网页内的所显示有内容
+#### get_text() 获取网页内的所显示有内容
 ```python
 print(soup.get_text())
 
