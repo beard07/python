@@ -10,17 +10,17 @@ pyhton
 --
 ***
 request | urlopen方法 最直接的get请求方式
-
+---
+url网页地址 data请求数据类似用户名密码 timeout 请求超时时间
 ```python
 import urllib.request
 response = urllib.requset.urlopen(url,data=None,[timeout]*)
 print(response.read().decode('utf-8'))
 ```
-urllib.requset.urlopen([url](/ "网页链接"), [data=None](/ "请求携带的数据，比如用户名和密码"), [timeout](/ "请求超时时间"))<br>
 request | Request方法 可以加入自定义headers数据 
-```
+---
+```python
 from urllib import request,parse
-
 
 #定义一下我们的请求 url 和 header
 url = 'https://biihu.cc//account/ajax/login_process/'
