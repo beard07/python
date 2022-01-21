@@ -5,13 +5,12 @@ pyhton
 * 基础请求<br>
 request | 最直接网页的请求方式
 
-```pyhton
+```python
 import urllib.request
-response = urllib.request.urlopen('http://www.baidu.com')
+response = urllib.requset.urlopen(url,data=None,[timeout]*)
 print(response.read().decode('utf-8'))
 ```
-request的urlopen方法，可以传入的参数主要有3个`urllib.requset.urlopen(url,data=None,[timeout]*)`<br>
-url是请求的网页链接，data是给post请求携带参数的比如用户名和密码,timeout是请求超时的时间
+urllib.requset.urlopen([url](/ "网页链接"), [data=None](/ "请求携带的数据，比如用户名和密码"), [[timeout]*](/ "请求超时时间"))<br>
 
 ***
 大标题
@@ -39,6 +38,6 @@ url是请求的网页链接，data是给post请求携带参数的比如用户名
 <br>插入项目中的图片https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 ***
 插入代码片段
-```Pyhton
-print('使用3个1旁边的引号')//pyhton
+```python
+print('使用3个1旁边的引号')
 ```
