@@ -2,10 +2,12 @@ pyhton
 ===
 爬虫笔记
 ---
-基础请求
-
-
-
+基础请求<br>
+request|
+```pyhton
+import urllib.request
+urllib.request.urlopen('http://www.baidu.comn')
+```
 ***
 大标题
 ===
