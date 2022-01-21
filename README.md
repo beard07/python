@@ -2,12 +2,17 @@ pyhton
 ===
 爬虫笔记
 ---
-基础请求<br>
-request|
+* 基础请求<br>
+request | 最直接网页的请求方式
+
 ```pyhton
 import urllib.request
-urllib.request.urlopen('http://www.baidu.comn')
+response = urllib.request.urlopen('http://www.baidu.com')
+print(response.read().decode('utf-8'))
 ```
+request的urlopen方法，可以传入的参数主要有3个`urllib.requset.urlopen(url,data=None,[timeout]*)`<br>
+url是请求的网页链接，data是给post请求携带参数的比如用户名和密码,timeout是请求超时的时间
+
 ***
 大标题
 ===
