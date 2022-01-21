@@ -1,8 +1,14 @@
 pyhton
-===
 爬虫笔记
+===
+基础请求
 ---
-* 基础请求<br>
+***
+* request 模块 
+    * [urlopen方法 | 最直接的get请求方式]()
+    * [Request方法 | 可以加入自定义headers数据]()
+--
+***
 request | urlopen方法 最直接的get请求方式
 
 ```python
