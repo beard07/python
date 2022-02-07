@@ -2,7 +2,7 @@ pyhton
 # 爬虫笔记
 ## 基础请求
 ***
-### Urllib 库
+## Urllib 库
 * request 模块 (用来发起请求)
   * urlopen方法 | 最直接的get请求方式
   * Request方法 | 可以加入自定义headers数据
@@ -10,7 +10,7 @@ pyhton
 * parse 模块 (用来解析我们的 URL 地址，比如解析域名地址啦，URL指定的目录等)
 * robotparser 模块 (用来解析网站的 robot.txt)
 
-### Requests 库
+## Requests 库
 * get 请求访问
 * post
 * put 、 delete 、 head 、 optins
@@ -25,7 +25,7 @@ pyhton
 * 获取 cookie 信息
 * 发送 cookie 信息
 
-### 正则表达式
+## 正则表达式
 * 常用符号
 * re 库 正确使用正则表达式
   * ☞ re.match 开头结尾全匹配
@@ -34,7 +34,7 @@ pyhton
   * ☞ re.sub 匹配所有内容并替换
   * ☞ re.compile 匹配符封装
 
-### beautifulsoup4 库 网页解析正式表达
+## beautifulsoup4 库 网页解析正式表达
 * p.title 获取 title 里面内容
 * p.string 获取 p标签 里面的内容
 * title.parent.name 获取 title 的父级标签
@@ -42,8 +42,11 @@ pyhton
 * find_all('a')获取所有超链接
 * find(id = "link2") 获取id = link2 的超链接
 * get_text() 获取网页内的所显示有内容
-* 
 
+## selenium 库 自动打开浏览器爬取
+* 
+* 
+* 
 ***
 ## Urllib 库
 ### request 模块
