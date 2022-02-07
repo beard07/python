@@ -4,35 +4,35 @@ pyhton
 ***
 ### Urllib 库
 * request 模块 (用来发起请求)
-  * [`urlopen`方法 | 最直接的get请求方式]()
-  * [`Request`方法 | 可以加入自定义headers数据]()
+  * urlopen方法 | 最直接的get请求方式
+  * Request方法 | 可以加入自定义headers数据
 * error 模块 (在使用`request`模块遇到错了，用它来进行异常处理)
 * parse 模块 (用来解析我们的 URL 地址，比如解析域名地址啦，URL指定的目录等)
 * robotparser 模块 (用来解析网站的 robot.txt)
 
 ### Requests 库
-* [`get` 请求访问]()
-* [`post` ]()
-* [`put` 、 `delete` 、 `head` 、 `optins`]()
-* [`text` 获取服务器响应文本内容]()
-* [`content` 获取字节响应内容]()
-* [`status_code` 获取响应码]()
-* [`headers` 获取响应头]()
-* [获取 socket 流响应内容]()
-* ['json' 获取 json 响应内容]()
-* [请求的时候用 json 作为参数]()
-* [上传文件]()
-* [获取 cookie 信息]()
-* [发送 cookie 信息]()
+* get 请求访问
+* post
+* put 、 delete 、 head 、 optins
+* text 获取服务器响应文本内容
+* content 获取字节响应内容
+* status_code 获取响应码
+* headers 获取响应头
+* 获取 socket 流响应内容
+* 'json' 获取 json 响应内容
+* 请求的时候用 json 作为参数
+* 上传文件
+* 获取 cookie 信息
+* 发送 cookie 信息
 
 ### 正则表达式
-* [常用符号]()
+* 常用符号
 * re 库 正确使用正则表达式
-  * [☞]() re.match 开头结尾全匹配
-  * [☞]() re.search 匹配第一个结果
-  * [☞]() re.findall 匹配所有匹配的结果
-  * [☞]() re.sub 匹配所有内容并替换
-  * [☞]() re.compile 匹配符封装
+  * ☞ re.match 开头结尾全匹配
+  * ☞ re.search 匹配第一个结果
+  * ☞ re.findall 匹配所有匹配的结果
+  * ☞ re.sub 匹配所有内容并替换
+  * ☞ re.compile 匹配符封装
 
 ### beautifulsoup4 库 网页解析正式表达
 * p.title 获取 title 里面内容
